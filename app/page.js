@@ -12,8 +12,9 @@ export default async function HomePage() {
   return (
     <div>
       <h1>{page.title.rendered}</h1>
-      <WordpressContent content={page.content.rendered} />
-
+        <main>
+          <WordpressContent content={page.content.rendered} />
+        </main>
     </div>
   );
 }
